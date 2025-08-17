@@ -22,9 +22,9 @@ jobs:
 
       - name: Validate CloudFormation template
         run: |
-          aws cloudformation validate-template \ 
+          aws cloudformation validate-template \
           --template-body file://templates/alb-asg-template.yaml
-        
+  
       - name: Deploy CloudFormation stack
         run: |
           aws cloudformation deploy \
